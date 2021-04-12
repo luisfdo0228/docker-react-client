@@ -1,10 +1,27 @@
-docker-compose run --rm app npx create-react-app react-app --use-npm
 
-docker rmi $(docker images -a -q) -f
 
-npm install
+# Toolbox palindrome Frontend-React
 
-docker-compose up
+This project contains the visual layer of the scope of the exercise here you as a user will be able to send words
 
-docker-compose down
 
+## Build Project
+
+`npm install`
+## Run Project
+
+`docker-compose up`
+## Stop Project
+
+`docker-compose down`
+
+
+## Processing data 
+# visual presentation
+<img src="./public/screen.png" alt=""/>
+
+
+
+
+
+you could run the frontend side in the url `http://localhost:3000/`

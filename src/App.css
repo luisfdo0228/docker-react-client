@@ -21,3 +21,13 @@
 .processing-title-style{
   color: #FFFFFF;
 }
+
+.toast-style{
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.mr-auto{
+  color: #b53733;
+}
