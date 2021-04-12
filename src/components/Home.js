@@ -16,7 +16,6 @@ export class Home extends Component {
     }
 
 
-
     getIechoApi = async (text) => {
         fetch('http://localhost:5000/api/iecho?text='+text)
           .then(response => response.json())
@@ -35,13 +34,10 @@ export class Home extends Component {
         })
     }
 
-
-
+    
     handleChange(event) {
         this.setState({open: false});
     } 
-
-    
 
 
     render(){

@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
-import { Navbar, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar as NavbarB, Form, FormControl, Button } from 'react-bootstrap';
 import logo from '../assets/img/logo.png';
 
 
 
 
-export class Navbarm extends React.Component  {
+export class Navbar extends React.Component  {
 
     constructor(props) {
         super(props);
@@ -31,20 +31,20 @@ export class Navbarm extends React.Component  {
     render(){
         const { handleSearch } = this.props
         return(
-            <Navbar className="navbar-style" variant="light" collapseOnSelect expand="lg">
-                <Navbar.Brand>
+            <NavbarB className="navbar-style" variant="light" collapseOnSelect expand="lg">
+                <NavbarB.Brand>
                 <a href="/#" alt="description of image">
                     <img src={logo}/>
                 </a>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse className="justify-content-center" id="responsive-navbar-nav">
+                </NavbarB.Brand>
+                <NavbarB.Toggle aria-controls="responsive-navbar-nav" />
+                <NavbarB.Collapse className="justify-content-center" id="responsive-navbar-nav">
                 <Form inline>
                     <FormControl value={this.state.value} onChange={this.handleChange} type="text" placeholder="Insert Text" className="mr-sm-2" />
                     <Button onClick={handleSearch} value={this.state.value} variant="outline-light">Send</Button>
                 </Form>
-                </Navbar.Collapse>
-            </Navbar>
+                </NavbarB.Collapse>
+            </NavbarB>
         )
     }
 }

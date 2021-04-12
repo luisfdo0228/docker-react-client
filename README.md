@@ -16,7 +16,8 @@ This project contains the visual layer of the scope of the exercise here you as 
 `docker-compose down`
 
 
-## Processing data
+## Processing data 
+# visual presentation
 <img src="./public/screen.png" alt=""/>
 
 

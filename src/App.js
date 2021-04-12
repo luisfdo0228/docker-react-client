@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Navbarm } from './components/Navbarm'
+import { Navbar } from './components/Navbar'
 import { Home } from './components/Home'
 
 class App extends React.Component {
@@ -20,7 +20,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbarm handleSearch={this.handleSearch}/>
+        <Navbar handleSearch={this.handleSearch}/>
         <Home ref={this.childHome}/>
       </div>
     );
